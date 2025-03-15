@@ -12,7 +12,7 @@ st.markdown("# MNER Tagger App")
 st.markdown("This app tags texts in English, French, German, and Italian using the WikiNeural model.")
 
 # Modell und Tokenizer laden
-model_name = r"C:\Users\TRA232365\Documents\GitHub\Model\finetuned_wikineural"
+model_name = r"Beabir/finetuned_wikineural_degbir"
 tokenizer = AutoTokenizer.from_pretrained(model_name)
 model = AutoModelForTokenClassification.from_pretrained(model_name)
 

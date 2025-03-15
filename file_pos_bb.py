@@ -5,7 +5,7 @@ from io import StringIO
 import random
 
 # Page Config muss als erstes kommen!
-st.set_page_config(page_title="MNER Tagger App")
+st.set_page_config(page_title="MNER Tagger App", page_icon="🔍")  # You can use an emoji or a custom image URL)
 
 # Titel & Beschreibung
 st.markdown("# MNER Tagger App")   
@@ -56,7 +56,7 @@ with tab1:
 
 # ✍ **Tab 2: Manuelle Texteingabe**
 with tab2:
-    text = st.text_input("Insert a text to get the POS tags for it")
+    text = st.text_input("Insert a text to get the NER tags for it")
 
     if text:
         # Tokenisierung mit Rückgabe der Wortgrenzen
